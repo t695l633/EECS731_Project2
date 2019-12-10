@@ -12,8 +12,13 @@ Classifying Shakespeare Actors based on line info
 6. Document your process and results
 7. Commit your notebook, source code, visualizations and other supporting files to the git repository in GitHub
 
+# Goal
+The goal of this project was to create a classification model that could identify a player based on other attributes given, such as the play they were in, when they spoke, or what they said.
+
+# Feature Engineering
 In this project I used a decision tree to classify what character was speaking a specific line of a Shakespeare play. The first thing I did was modify my data set to include only the most worthwhile data. I also split up ActSceneLine into 3 separate columns so their numerical values could be used in my decision tree.
 
+# Model
 I used a decision tree to solve this classification problem because all of the attributes I worked with were numerical, so a decision tree could easily separate characters by play, act, and scene. 
 
 After training my decision tree on 70% of my data, it was ~77% accurate in classifying characters from the remaining 30% of lines.
